@@ -1,15 +1,15 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ x] $() Select by Element, ID AND Class 
+[ x ] Use Three Different jQuery Methods 
+[ x ] Add Five CSS Declarations
+[ x ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
-[ no ] Feature 4 - Use .show() method
+[ x ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
 
@@ -29,32 +29,93 @@ Select ONE Additional
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p id="memone">More about this memory.</p>
+        <img
+             class="place"
+             src="https://media.istockphoto.com/id/1459373176/vector/abstract-defocused-background-spring-summer-sea.jpg?s=612x612&w=0&k=20&c=P6D1VrXeeKsJfyKzlJeIqxyNXkeYtMb6C1mW6p68xro="
+             width="500px"
+             >
+     <img
+          class="dog"
+          src="https://cdn.discordapp.com/attachments/1002470041515741275/1367266457033113711/image.jpg?ex=6813f59d&is=6812a41d&hm=9b51259f57f08dffaf9c78616dafc6ce10eef7a2d257e0ee7fe606b3439e8341&"
+      style="display:none"
+          width="300px">
+            <img
+          class="dog"
+          src="https://cdn.discordapp.com/attachments/1002470041515741275/1367266688751501343/image.jpg?ex=6813f5d5&is=6812a455&hm=d0d1ebf2b289fb3ab1b596d810fc6b70a92e4fe9bfc25d74e53344f99d4adea6&"
+      style="display:none"
+          width="300px">
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p id="memtwo">More about this memory.</p>
+        <img
+             class="coop"
+             src="https://cdn.discordapp.com/attachments/1002470041515741275/1367267490366881822/image.jpg?ex=6813f694&is=6812a514&hm=f93cf995cd13274b4465833ecebd49b8efe2012a1c71a86155aefbb3aa8a6e07&"
+             style="display:none"
+             height="300px">
+          <img
+             class="coop"
+             src="https://cdn.discordapp.com/attachments/1002470041515741275/1367267895696031754/image.jpg?ex=6813f6f4&is=6812a574&hm=557ce4f6ff5260fa60a007e901280ad08b83e7d920b36864db7c72185eb2ffbe&"
+             style="display:none"
+             width="300px">
+        <img
+             class="place1"
+             src="https://media.istockphoto.com/id/1459373176/vector/abstract-defocused-background-spring-summer-sea.jpg?s=612x612&w=0&k=20&c=P6D1VrXeeKsJfyKzlJeIqxyNXkeYtMb6C1mW6p68xro="
+             width="500px"
+             >
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p id="memthree">More about this memory</p>
+          <img
+             class="show"
+             src="https://cdn.discordapp.com/attachments/1002470041515741275/1367266931366821998/image.jpg?ex=6813f60f&is=6812a48f&hm=da379c5400d4aa534ed63ae8e6aafe792d9598a17c6d9a2242961e5c84f84e7c&"
+             style="display:none"
+             width="300px">
+          <img
+             class="show"
+             src="https://cdn.discordapp.com/attachments/1002470041515741275/1367267161512611901/image.jpg?ex=6813f645&is=6812a4c5&hm=e4aabdfc2477764efd9276876d8ebe79adb6a74e382026b5428b17dbe63a69bd&"
+             style="display:none"
+             width="300px">
+        <img
+             class="place2"
+             src="https://media.istockphoto.com/id/1459373176/vector/abstract-defocused-background-spring-summer-sea.jpg?s=612x612&w=0&k=20&c=P6D1VrXeeKsJfyKzlJeIqxyNXkeYtMb6C1mW6p68xro="
+             width="500px"
+             >
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+$("h1").html("Li's top 3 Memories of This Year")
+      
       $("#mem1-button").click(function () {
+      
         $("#mem1").css("color", "purple");
-      });
+        $("#mem1").text("Greek Cats");
+        $("#memone").text("Met a ton of stray cats and dogs during my trip with my mom")
+$(".place").attr("width", "0")
+        $(".dog").show(2000)
+        
+    });
 
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+        $("#mem2").text("Finishing my Cooper hometest");
+         $("#memtwo").text("LETS FREAKING GO")
+        $(".coop").show(2000)
+        $(".place1").attr("width", "0")
       });
 
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
+        $("#mem3").text("My Senior Art Show");
+        $("#memthree").text("The entire show was amazing, everyone is so talented.")
+      $(".show").show(2000)
+        $(".place2").attr("width", "0")
       });
     </script>
   </body>
